@@ -6,6 +6,6 @@
  3. Run below commands
 
  ```
- npm Install
+ npm install
  node firstWrite.js
  ```

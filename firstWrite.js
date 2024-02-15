@@ -1,6 +1,8 @@
 const { InfluxDB, Point } = require('@influxdata/influxdb-client')
+require('dotenv').config();
 
-const token = 'd8huV3K6lJBYmG3mqOSVyZYSPiaDm1UCkivMRbodjMYam84jGOIAd2d15yStazFMZWcj3LtKzkaxTPYEJPYwKQ=='
+const token = process.env.INFLUXDB_TOKEN;
+
 const url = 'http://localhost:8086'
 
 const client = new InfluxDB({ url, token })
